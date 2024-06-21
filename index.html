@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wireless Calculator | BZU </title>
+</head>
+<body>
+
+    
+    <header>
+        <a href="#" class="logo">Wireless Calcuator</a>
+        <nav class="navigation">
+            <a href="#communication">COMMUNICATION BLOCKS</a>
+            <a href="#OFDM">OFDM</a>
+            <a href="#power">POWER</a>
+            <a href="#throuput">THROUPHUT</a>
+            <a href="#design">DESIGN</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>Wireless and Mobile Networks<br><span>Course Calcuator</span></h2>
+            <h3>This calculator developed for caluclating the values of some wireless applications outputs based on user defined inputs! </h3>
+            <a href="#communication" class="main-btn">Get Started</a>
+    
+        </div>
+
+    </section>
+
+        
+
+    <section class="communication" id="communication">
+
+        <div class="communication-calculator">
+                <h2 id="communication-title" >Communication Blocks Calculator</h2>
+    
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="communicationBandwidth">Bandwidth (KHz):</label>
+                <input type="number" id="communicationBandwidth" value="4"/>
+            </div>
+        
+        </div>
+        <label for="quantizerLevelBit">Quantizer Levels/Bits:</label>
+        <div class="input-wrapper-two" >
+                <input type="number" id="quantizerLevelBit" value="8">
+                <select name="quantizer-type" id="quantizer-bits-level">
+                    <option value="bits">Bits</option>
+                    <option value="level">Levels</option>
+                </select>
+        </div>
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="sourceEncoderRatio">Source Encoder Compression Ratio:</label>
+                <input type="number" id="sourceEncoderRatio" value="0.25"/>
+            </div>
+            <div class="wrapper">
+                <label for="channelEncoderRate">Channel Encoder Rate:</label>
+                <input type="number" id="channelEncoderRate" value="0.5" >
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="InterleaverBits">Interleaver bits:</label>
+            <input type="number" id="InterleaverBits" value="1024" >
+        </div>
+
+        <button id="communication-button">Calculate</button>
+        <div id="communicationResult"></div>
+
+</div>
+
+
+    </section>
+
+
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
