@@ -401,48 +401,55 @@
   <section class="design" id="design">
     <div class="design-calculator">
         <h2 id="design-title">Design Calculator</h2>
-        <div class="input-wrapper">
+        <div class="input-wrapper-three">
             <div class="wrapper">
                 <label for="area">Area (Km<sup>2</sup>):</label>
                 <input type="number" id="area" value="4">
             </div>
             <div class="wrapper">
                 <label for="subscribers">Number of subscribers:</label>
-                <input type="number" id="subscribers" value="80000">
-            </div>
-            <div class="wrapper">
-                <label for="avgCallsPerDay">Average calls per day per subscriber:</label>
-                <input type="number" id="avgCallsPerDay" value="8">
-            </div>
-            <div class="wrapper">
-                <label for="avgCallDuration">Average call duration (minutes):</label>
-                <input type="number" id="avgCallDuration" value="3">
-            </div>
-            <div class="wrapper">
-                <label for="callDropProb">Call drop probability:</label>
-                <input type="number" step="0.01" id="callDropProb" value="0.02">
+                <input type="number" id="subscribers" value="80000"> 
             </div>
             <div class="wrapper">
                 <label for="minSIR">Minimum SIR (dB):</label>
                 <input type="number" id="minSIR" value="13">
             </div>
+        </div>
+        <div class="input-wrapper-three">
             <div class="wrapper">
-                <label for="refPower">Reference power (dB):</label>
-                <input type="number" id="refPower" value="-22">
+                <label for="avgCallDuration">Average call duration (minutes):</label>
+                <input type="number" id="avgCallDuration" value="3">
             </div>
             <div class="wrapper">
                 <label for="refDistance">Reference distance (meters):</label>
                 <input type="number" id="refDistance" value="10">
             </div>
             <div class="wrapper">
+                <label for="avgCallsPerDay">Average calls per day per subscriber:</label>
+                <input type="number" id="avgCallsPerDay" value="8">
+            </div>
+        </div>
+        <div class="input-wrapper-three">
+            <div class="wrapper">
+                <label for="refPower">Reference power (dB):</label>
+                <input type="number" id="refPower" value="-22">
+            </div>
+            <div class="wrapper">
+                <label for="callDropProb">Call drop probability:</label>
+                <input type="number" step="0.01" id="callDropProb" value="0.02">
+            </div>
+            <div class="wrapper">
                 <label for="pathLossExp">Path loss exponent:</label>
                 <input type="number" step="0.1" id="pathLossExp" value="3">
             </div>
+        </div>
+        <div class="input-wrapper-three">
             <div class="wrapper">
                 <label for="receiverSensitivity">Receiver sensitivity (μW):</label>
                 <input type="number" id="receiverSensitivity" value="7">
             </div>
         </div>
+
         <button id="design-button">Calculate</button>
         <div id="designResult"></div>
     </div>
