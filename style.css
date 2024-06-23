@@ -42,7 +42,8 @@ header {
 }
 
 section {
-    padding: 100px 200px;
+    padding: 300px 300px;
+
 }
 
 .main  {
@@ -62,6 +63,14 @@ section {
     color: #fff;
     font-size: 1.4em;
     font-weight: 500;
+}
+.main h4 {
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 500;
+    padding-left: 60%;
+    padding-top: 1%;
+    
 }
 .main h2 span {
     display: inline-block;
@@ -190,6 +199,7 @@ select {
     padding: 15px 40px;
     font-size: 20px;
     border-radius: 15px;
+
 }
 
 #communicationResult {
@@ -206,7 +216,263 @@ select {
 }
 
 
+/* OFDM Section */
+
+.ofdm {
+    height: 100vh;
+    background: linear-gradient(#0188e2, #72cbff);
+}
+
+.ofdm-calculator {
+    position: relative;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 600px;
+    min-width: 350px;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+#ofdm-title {
+    margin-bottom: 20px;
+}
+
+#ofdmResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#ofdmResult div {
+    margin-bottom: 10px;
+}
+
+.inline-input {
+    display: flex;
+    align-items: center;
+}
+
+.inline-input input {
+    margin-right: 10px;
+}
+#ofdm-button{
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+/*Power Calculation*/
+
+.power {
+    height: 100vh;
+    background: linear-gradient(#0188e2,#72cbff);
+}
 
 
 
+.power-calculator{
+    position:relative;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 1000px;
+    min-width: 350px;padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 
+}
+
+#power-title {
+    margin-bottom: 20px;
+}
+
+.input-wrapper-three {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.input-wrapper-three input {
+    width: 50%;
+}
+#power-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#powerResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*throughput*/
+.throughput {
+    height: 100vh;
+    background: linear-gradient(#0188e2,#72cbff);
+}
+.throughput-calculator{
+    position:relative;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 750px;
+    min-width: 350px;padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+}
+
+#throughput-title {
+    margin-bottom: 20px;
+}
+#throughput-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#throughputResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.input-wrapper-four {
+    display: flex;
+    
+    gap: 20px;
+}
+.input-wrapper-four input {
+    width: 40%;
+}
+.input-wrapper-four select{
+    width: 100%;
+    border: 1px solid #064c7a;
+    font-size: 20px;
+    margin-left: 3%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+#throuput-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#throuputResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Design Section */
+.design {
+    height: 100vh;
+    background: linear-gradient(#0188e2, #72cbff);
+}
+
+.design-calculator {
+    position: relative;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 350px;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+#design-title {
+    margin-bottom: 20px;
+    
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0188e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0168b2;
+}
+
+#design-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#designResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
