@@ -191,6 +191,7 @@ select {
     padding: 15px 40px;
     font-size: 20px;
     border-radius: 15px;
+
 }
 
 #communicationResult {
@@ -208,8 +209,7 @@ select {
 
 
 /* OFDM Section */
-/* OFDM Section */
-/* OFDM Section */
+
 .ofdm {
     height: 100vh;
     background: linear-gradient(#0188e2, #72cbff);
@@ -409,7 +409,7 @@ select {
     top: 50%;
     left: 50%;
     width: 80vw;
-    max-width: 600px;
+    max-width: 900px;
     min-width: 350px;
     padding: 60px 30px;
     border-radius: 10px;
@@ -418,7 +418,7 @@ select {
 
 #design-title {
     margin-bottom: 20px;
-    text-align: center;
+    
 }
 
 .input-wrapper {
@@ -449,6 +449,22 @@ button:hover {
     background-color: #0168b2;
 }
 
+#design-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
 #designResult {
-    margin-top: 20px;
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
 }
