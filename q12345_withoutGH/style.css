@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #4a6cf4;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.8em;
+
+}
+
+.navigation a{
+    color: #4a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+
+.navigation a:hover {
+    color: #501cfc;
+}
+
+section {
+    padding: 300px 300px;
+
+}
+
+.main  {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./images/back.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+.main h2 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 { 
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #4a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.187em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #0a49f6;
+    transform: scale(1.05);
+}
+.social-icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+
+.communication {
+    height: 100vh;
+    background: linear-gradient(#0188e2,#72cbff);
+}
+
+
+
+.communication-calculator{
+    position: relative;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 600px;
+    min-width: 350px;padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+}
+
+label {
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+input {
+    margin-bottom: 20px;
+    border: none;
+    font-size: 20px;
+    border-bottom: 2px solid #0a49f6;
+    color: #064c7a;
+    padding: 2px 15px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2.4px solid #82c9f9;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.input-wrapper input {
+    width: 100%;
+}
+
+#communication-title {
+    margin-bottom: 20px;
+}
+
+
+select {
+    width: 35%;
+    border: 1px solid #064c7a;
+    font-size: 20px;
+    margin-left: 3%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+
+
+#communication-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+
+}
+
+#communicationResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#communicationResult div {
+    margin-bottom: 10px;
+}
+
+
+/* OFDM Section */
+
+.ofdm {
+    height: 100vh;
+    background: linear-gradient(#0188e2, #72cbff);
+}
+
+.ofdm-calculator {
+    position: relative;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 600px;
+    min-width: 350px;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+#ofdm-title {
+    margin-bottom: 20px;
+}
+
+#ofdmResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#ofdmResult div {
+    margin-bottom: 10px;
+}
+
+.inline-input {
+    display: flex;
+    align-items: center;
+}
+
+.inline-input input {
+    margin-right: 10px;
+}
+#ofdm-button{
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+/*Power Calculation*/
+
+.power {
+    height: 100vh;
+    background: linear-gradient(#0188e2,#72cbff);
+}
+
+
+
+.power-calculator{
+    position:relative;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 1000px;
+    min-width: 350px;padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+}
+
+#power-title {
+    margin-bottom: 20px;
+}
+
+.input-wrapper-three {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.input-wrapper-three input {
+    width: 50%;
+}
+#power-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#powerResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*throughput*/
+.throughput {
+    height: 100vh;
+    background: linear-gradient(#0188e2,#72cbff);
+}
+.throughput-calculator{
+    position:relative;
+    background-color: #ffffff;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 750px;
+    min-width: 350px;padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+}
+
+#throughput-title {
+    margin-bottom: 20px;
+}
+#throughput-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#throughputResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.input-wrapper-four {
+    display: flex;
+    
+    gap: 20px;
+}
+.input-wrapper-four input {
+    width: 40%;
+}
+.input-wrapper-four select{
+    width: 100%;
+    border: 1px solid #064c7a;
+    font-size: 20px;
+    margin-left: 3%;
+    padding: 8px 0;
+    border-radius: 5px;
+}
+#throuput-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#throuputResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Design Section */
+.design {
+    height: 100vh;
+    background: linear-gradient(#0188e2, #72cbff);
+}
+
+.design-calculator {
+    position: relative;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 350px;
+    padding: 60px 30px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+#design-title {
+    margin-bottom: 20px;
+    
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    flex: 1 1 calc(50% - 20px);
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0188e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #0168b2;
+}
+
+#design-button {
+    display: block;
+    background-color: #4e9eff;
+    border: none;
+    color: #ffffff;
+    margin: 20px auto 0 auto;
+    padding: 15px 40px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+#designResult {
+    background-color: #ace1ff;
+    margin-top: 30px;
+    color: #064c7a;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
