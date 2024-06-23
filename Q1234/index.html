@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wireless Calculator | BZU </title>
+</head>
+<body>
+
+    
+    <header>
+        <a href="#" class="logo">Wireless Calcuator</a>
+        <nav class="navigation">
+            <a href="#communication">COMMUNICATION BLOCKS</a>
+            <a href="#OFDM">OFDM</a>
+            <a href="#power">POWER</a>
+            <a href="#throughput">THROUGHPUT</a>
+            <a href="#design">DESIGN</a>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <h2>Wireless and Mobile Networks<br><span>Course Calcuator</span></h2>
+            <h3>This calculator developed for caluclating the values of some wireless applications outputs based on user defined inputs! </h3>
+            <a href="#communication" class="main-btn">Get Started</a>
+    
+        </div>
+
+    </section>
+
+        <!---------------------------------------------------- Communication Blocks Calculator  ---------------------------------------------------------------------------------->
+
+
+    <section class="communication" id="communication">
+
+        <div class="communication-calculator">
+                <h2 id="communication-title" >Communication Blocks Calculator</h2>
+    
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="communicationBandwidth">Bandwidth (KHz):</label>
+                <input type="number" id="communicationBandwidth" value="4"/>
+            </div>
+        
+        </div>
+        <label for="quantizerLevelBit">Quantizer Levels/Bits:</label>
+        <div class="input-wrapper-two" >
+                <input type="number" id="quantizerLevelBit" value="8">
+                <select name="quantizer-type" id="quantizer-bits-level">
+                    <option value="bits">Bits</option>
+                    <option value="level">Levels</option>
+                </select>
+        </div>
+        <div class="input-wrapper">
+            <div class="wrapper">
+                <label for="sourceEncoderRatio">Source Encoder Compression Ratio:</label>
+                <input type="number" id="sourceEncoderRatio" value="0.25"/>
+            </div>
+            <div class="wrapper">
+                <label for="channelEncoderRate">Channel Encoder Rate:</label>
+                <input type="number" id="channelEncoderRate" value="0.5" >
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="InterleaverBits">Interleaver bits:</label>
+            <input type="number" id="InterleaverBits" value="1024" >
+        </div>
+
+        <button id="communication-button">Calculate</button>
+        <div id="communicationResult"></div>
+
+</div>
+
+
+    </section>
+    <!---------------------------------------------------- Communication Blocks Calculator End ---------------------------------------------------------------------------------->
+
+
+    <!---------------------------------------------------- OFDM Calculator  ---------------------------------------------------------------------------------->
+
+
+    <section class="ofdm" id="OFDM">
+        <div class="ofdm-calculator">
+            <h2 id="ofdm-title">OFDM Calculator</h2>
+            <div class="input-wrapper">
+                <div class="wrapper">
+                    <label for="ofdmBandwidth">Bandwidth of each resource block:</label>
+                    <div class="inline-input">
+                        <input type="number" id="ofdmBandwidth" value="100">
+                        <select id="ofdmBandwidthUnit">
+                            <option value="Hz">Hz</option>
+                            <option value="KHz">KHz</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="wrapper">
+                    <label for="subcarrierSpacing">Subcarrier Spacing:</label>
+                    <div class="inline-input">
+                        <input type="number" id="subcarrierSpacing" value="15">
+                        <select id="subcarrierSpacingUnit">
+                            <option value="Hz">Hz</option>
+                            <option value="KHz">KHz</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="wrapper">
+                    <label for="resourceBlockDuration">Resource Block Duration:</label>
+                    <div class="inline-input">
+                        <input type="number" id="resourceBlockDuration" value="1">
+                        <select id="resourceBlockDurationUnit">
+                            <option value="sec">sec</option>
+                            <option value="msec">msec</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="wrapper">
+                    <label for="number2n">Select QAM number:</label>
+                    <select id="number2n">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="32">32</option>
+                        <option value="64">64</option>
+                        <option value="128">128</option>
+                        <option value="256">256</option>
+                        <option value="512">512</option>
+                        <option value="1024">1024</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="wrapper">
+                    <label for="numberOfOfdm">Number of OFDM:</label>
+                    <input type="number" id="numberOfOfdm" value="1">
+                </div>
+            </div>
+            <div class="input-wrapper">
+                <div class="wrapper">
+                    <label for="parallelResourceBlock">Number of parallel resource blocks for a user:</label>
+                    <input type="number" id="parallelResourceBlock" value="1">
+                </div>
+            </div>
+            <button id="ofdm-button">Calculate</button>
+            <div id="ofdmResult"></div>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+
+        <!---------------------------------------------------- OFDM Calculator End ---------------------------------------------------------------------------------->
+
+
+
+
+
+        <!--Power section-->
+<section class="power" id="power">
+
+    <div class="power-calculator">
+            <h2 id="power-title" >Power Calculator</h2>
+
+        <div class="input-wrapper-three">
+            <div class="wrapper">
+                <label for="frequency">Frequency:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="frequency" value="900">
+            </div>
+            </div>
+            <div class="wrapper">
+                <label for="digitalModulationTechnique"> Modulation Technique:</label>
+                <div class="input-wrapper-two" >
+                        <select name="digitalModulationTechniqueType" id="digitalModulationTechniqueT">
+                            <option value="8PSK">8-PSK</option>
+                            <option value="16PSK">16-PSK</option>
+                            <option value="BPSK/QPSK">BPSK/QPSK</option>
+                        </select>
+                </div>
+            </div>
+            <div class="wrapper">
+                <label for="fademargin">Fade Margin:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="fademargin" value="8">
+                    <select name="fademargin-type" id="fademargin-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+            </div>
+            
+        </div>
+    
+   
+    <div class="input-wrapper-three">
+        <div class="wrapper">
+            <label for="pathloss">Path Loss:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="pathloss" value="140">
+                    <select name="pathloss-type" id="pathloss-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="otherlosses">Other Losses:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="otherlosses" value="20">
+                    <select name="otherlosses-type" id="otherlosses-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="tranmitAntennaGain">Tranmit Antenna Gain:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="tranmitAntennaGain" value="8">
+                    <select name="tranmitAntennaGain-type" id="tranmitAntennaGain-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-wrapper-three">
+        <div class="wrapper">
+            <label for="receiveAntennaGain">Receive Antenna Gain:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="receiveAntennaGain" value="0">
+                    <select name="receiveAntennaGain-type" id="receiveAntennaGain-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="tranmitAmpliferGain">Tranmit Amplifer Gain:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="tranmitAmpliferGain" value="0">
+                    <select name="tranmitAmpliferGain-type" id="tranmitAmpliferGain-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="receiveAmpliferGain">Receive Amplifer Gain:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="receiveAmpliferGain" value="24">
+                    <select name="receiveAmpliferGain-type" id="receiveAmpliferGain-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="input-wrapper-three">
+        <div class="wrapper">
+            <label for="datarate">Data Rate:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="datarate" value="9.6">
+                    <select name="datarate-type" id="datarate-kbps-dB">
+                        <option value="kbps">kbps</option>
+                        <option value="dB">dB</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="noiseTemp">Noise Temperature:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="noiseTemp" value="290">
+                    <select name="noiseTemp-type" id="noiseTemp-kelvin-dB">
+                        <option value="kelvin">kelvin</option>
+                        <option value="dB">dB</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="linkMargin">Link Margin:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="linkMargin" value="8">
+                    <select name="linkMargin-type" id="linkMargin-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+    </div>
+    <div class="input-wrapper-three">
+        <div class="wrapper">
+            <label for="antennaFeedLineLoss">Antenna Feed Line Loss:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="antennaFeedLineLoss" value="12">
+                    <select name="antennaFeedLineLoss-type" id="antennaFeedLineLoss-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="noiseFigureTotal">Noise Figure Total:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="noiseFigureTotal" value="6">
+                    <select name="noiseFigureTotal-type" id="noiseFigureTotal-dB-watt">
+                        <option value="dB">dB</option>
+                        <option value="watt">watt</option>
+                    </select>
+            </div>
+        </div>
+        <div class="wrapper">
+            <label for="BER">BER:</label>
+            <div class="input-wrapper-two" >
+                    <input type="number" id="BER" value="0.0001">
+                    
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <button id="power-button">Calculate Power transmitted</button>
+    <div id="powerResult"></div>
+
+</div>
+
+
+</section>
+<!--Throughput section-->   
+<section class="throughput" id="throughput">
+
+    <div class="throughput-calculator">
+            <h2 id="throughput-title" >Throughput Calculator</h2>
+
+            <div class="input-wrapper-four">
+                <div class="wrapper">
+                    <label for="bandwidthThroughput">Bandwidth (Mbps):</label>
+                    <input type="number" id="bandwidthThroughput" value="20">
+                </div>
+                <div class="wrapper">
+                    <label for="multipleAccessTechnique">Multiple Access Technique:</label>
+                    <div class="input-wrapper-four" >
+                            <select name="multipleAccessTechnique-type" id="multipleAccessTechniqueT">
+                                <option value="unslottedNonpersistent">Unslotted Nonpersistent</option>
+                                <option value="slottedNonpersistent">Slotted Nonpersistent</option>
+                                <option value="unslotted1-persistent">Unslotted 1-persistent</option>
+                                <option value="slotted1-persistent">Slotted 1-persistent</option>
+                            </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-wrapper-four">
+                <div class="wrapper">
+                    <label for="propagationTime">Propagation Time:</label>
+                    <input type="number" id="propagationTime" value="40">
+                </div>
+                <div class="wrapper">
+                    <div class="wrapper">
+                        <label for="frameSize">Frame Size (Kbit):</label>
+                        <input type="number" id="frameSize" value="10">
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="wrapper">
+                        <label for="frameRate">Frame Rate (Kfps):</label>
+                        <input type="number" id="frameRate" value="5">
+                    </div>
+                </div>
+            </div>
+
+    <button id="throughput-button">Calculate Throughput</button>
+    <div id="throughputResult"></div>
+
+    </div>
+
+
+</section>
+
+
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
